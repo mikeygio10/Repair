@@ -1,0 +1,20 @@
+name: Repair
+main: anirudh246\repair\main
+version: 1.0.0
+api: [3.0.0, 4.0.0]
+
+load: POSTWORLD
+author: anirudh246
+description: Repair plugin for DarkSide Network
+website: https://github.com/anirudh246/Repair
+
+commands:
+  repair:
+    description: repair command
+    usage: "Usage: /repair"
+    permission: darkside.repair.command
+
+permissions:
+  edarkside.repair.command:
+    description: "Allows the user to run the repair command"
+    default: true
