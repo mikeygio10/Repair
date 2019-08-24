@@ -15,6 +15,6 @@ commands:
     permission: darkside.repair.command
 
 permissions:
-  edarkside.repair.command:
+  darkside.repair.command:
     description: "Allows the user to run the repair command"
     default: true
