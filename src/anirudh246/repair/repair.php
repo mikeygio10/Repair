@@ -21,7 +21,7 @@ use pocketmine\Server;
 use pocketmine\entity\Effect;
 use pocketmine\item\enchantment\Enchantment;
 use pocketmine\event\player\PlayerChatEvent;
-use pocketmine\event\player\PlayerCommandPreprocessEvent
+use pocketmine\event\player\PlayerCommandPreprocessEvent;
 use pocketmine\item\Tool;
 use pocketmine\item\Armor;
 
@@ -42,7 +42,7 @@ class Main extends PluginBase implements Listener{
                         $meta = $item->getDamage();
                         $sender->getInventory()->removeItem(Item::get($id, $meta, 1));
                         $nitem = Item::get($id, 0, 1);
-                        if($item->hasCustomName())->setCustomName($item->getCustomName());
+                        ($item->hasCustomName())->setCustomName($item->getCustomName());
 
                         }
                         if($item->hasEnchantments()){
