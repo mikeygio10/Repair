@@ -38,7 +38,7 @@ class Main extends PluginBase implements Listener{
                 if($sender instanceof Player){
                     $item = $sender->getInventory()->getItemInHand();
                     if($item instanceof Armor or $item instanceof Tool){
-                        id$item->getId();
+                        $item->getId();
                         $meta = $item->getDamage();
                         $sender->getInventory()->removeItem(Item::get($id, $meta, 1));
                         $nitem = Item::get($id, 0, 1);
